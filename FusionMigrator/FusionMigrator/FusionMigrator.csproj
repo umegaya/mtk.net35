@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{859EF414-0B6B-4F9F-8EA3-C60468C242A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FusionMigrator</RootNamespace>
+    <AssemblyName>FusionMigrator</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FusionMigrator.csproj" />
+    <None Include="Simple.Migrations\Simple.Migrations.xproj" />
+    <None Include="Simple.Migrations\SimpleMigrations.ruleset" />
+    <None Include="Simple.Migrations\project.json" />
+    <None Include="Simple.Migrations\project.lock.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FluentMigrator\ExplicitUnicodeString.cs" />
+    <Compile Include="FluentMigrator\IMigrationConventions.cs" />
+    <Compile Include="FluentMigrator\IMigrationGenerator.cs" />
+    <Compile Include="FluentMigrator\IMigrationProcessor.cs" />
+    <Compile Include="FluentMigrator\IMigrationProcessorOptions.cs" />
+    <Compile Include="FluentMigrator\IQuerySchema.cs" />
+    <Compile Include="FluentMigrator\RawSql.cs" />
+    <Compile Include="FluentMigrator\SystemMethods.cs" />
+    <Compile Include="FluentMigrator\Expressions\AlterColumnExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\AlterDefaultConstraintExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\AlterSchemaExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\AlterTableExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\CreateColumnExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\CreateConstraintExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\CreateForeignKeyExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\CreateIndexExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\CreateSchemaExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\CreateSequenceExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\CreateTableExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\DeleteColumnExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\DeleteConstraintExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\DeleteDataExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\DeleteDefaultConstraintExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\DeleteForeignKeyExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\DeleteIndexExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\DeleteSchemaExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\DeleteSequenceExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\DeleteTableExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\ExecuteEmbeddedSqlScriptExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\ExecuteSqlScriptExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\ExecuteSqlStatementExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\IMigrationExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\InsertDataExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\MigrationExpressionBase.cs" />
+    <Compile Include="FluentMigrator\Expressions\RenameColumnExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\RenameTableExpression.cs" />
+    <Compile Include="FluentMigrator\Expressions\UpdateDataExpression.cs" />
+    <Compile Include="FluentMigrator\Infrastructure\ErrorMessages.cs" />
+    <Compile Include="FluentMigrator\Infrastructure\IAssemblyCollection.cs" />
+    <Compile Include="FluentMigrator\Infrastructure\ICanBeConventional.cs" />
+    <Compile Include="FluentMigrator\Infrastructure\ICanBeValidated.cs" />
+    <Compile Include="FluentMigrator\Infrastructure\IFluentSyntax.cs" />
+    <Compile Include="FluentMigrator\Infrastructure\IMigrationContext.cs" />
+    <Compile Include="FluentMigrator\Infrastructure\IMigrationInfo.cs" />
+    <Compile Include="FluentMigrator\Infrastructure\ISupportAdditionalFeatures.cs" />
+    <Compile Include="FluentMigrator\Infrastructure\MigrationContext.cs" />
+    <Compile Include="FluentMigrator\Infrastructure\Extensions\ExtensionsForICustomAttributeProvider.cs" />
+    <Compile Include="FluentMigrator\Infrastructure\Extensions\ExtensionsForIEnumerable.cs" />
+    <Compile Include="FluentMigrator\Model\ColumnDefinition.cs" />
+    <Compile Include="FluentMigrator\Model\ConstraintDefinition.cs" />
+    <Compile Include="FluentMigrator\Model\DeletionDataDefinition.cs" />
+    <Compile Include="FluentMigrator\Model\Direction.cs" />
+    <Compile Include="FluentMigrator\Model\ForeignKeyDefinition.cs" />
+    <Compile Include="FluentMigrator\Model\IndexColumnDefinition.cs" />
+    <Compile Include="FluentMigrator\Model\IndexDefinition.cs" />
+    <Compile Include="FluentMigrator\Model\IndexIncludeDefinition.cs" />
+    <Compile Include="FluentMigrator\Model\InsertionDataDefinition.cs" />
+    <Compile Include="FluentMigrator\Model\SequenceDefinition.cs" />
+    <Compile Include="FluentMigrator\Model\TableDefinition.cs" />
+    <Compile Include="FluentMigrator.Runner\CompatabilityMode.cs" />
+    <Compile Include="FluentMigrator.Runner\IAnnouncer.cs" />
+    <Compile Include="FluentMigrator.Runner\Extensions\CompatabilityModeExtension.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\EmptyDescriptionGenerator.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\IColumn.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\IDescriptionGenerator.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\IQuoter.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\ITypeMap.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\Base\ColumnBase.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\Base\GeneratorBase.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\Base\TypeMapBase.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\Generic\GenericDescriptionGenerator.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\Generic\GenericGenerator.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\Generic\GenericQuoter.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\MySql\MySqlColumn.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\MySql\MySqlGenerator.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\MySql\MySqlQuoter.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\MySql\MySqlTypeMap.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\SQLite\SQLiteColumn.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\SQLite\SQLiteGenerator.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\SQLite\SQLiteQuoter.cs" />
+    <Compile Include="FluentMigrator.Runner\Generators\SQLite\SQLiteTypeMap.cs" />
+    <Compile Include="FluentMigrator.Runner\Helpers\FormatHelper.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\DbFactoryBase.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\GenericProcessorBase.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\IDbFactory.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\IMigrationProcessorFactory.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\MigrationProcessorFactory.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\ProcessorBase.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\ProcessorOptions.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\ReflectionBasedDbFactory.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\MySql\MySqlDbFactory.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\MySql\MySqlProcessor.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\MySql\MySqlProcessorFactory.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\SQLite\SQLiteDbFactory.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\SQLite\SQLiteProcessor.cs" />
+    <Compile Include="FluentMigrator.Runner\Processors\SQLite\SQLiteProcessorFactory.cs" />
+    <Compile Include="Simple.Migrations\AssemblyMigrationProvider.cs" />
+    <Compile Include="Simple.Migrations\IDatabaseProvider.cs" />
+    <Compile Include="Simple.Migrations\ILogger.cs" />
+    <Compile Include="Simple.Migrations\IMigration.cs" />
+    <Compile Include="Simple.Migrations\IMigrationLogger.cs" />
+    <Compile Include="Simple.Migrations\IMigrationProvider.cs" />
+    <Compile Include="Simple.Migrations\ISimpleMigrator.cs" />
+    <Compile Include="Simple.Migrations\Migration.cs" />
+    <Compile Include="Simple.Migrations\MigrationAttribute.cs" />
+    <Compile Include="Simple.Migrations\MigrationData.cs" />
+    <Compile Include="Simple.Migrations\MigrationDirection.cs" />
+    <Compile Include="Simple.Migrations\MigrationException.cs" />
+    <Compile Include="Simple.Migrations\MigrationLoadFailedException.cs" />
+    <Compile Include="Simple.Migrations\MissingMigrationException.cs" />
+    <Compile Include="Simple.Migrations\NullLogger.cs" />
+    <Compile Include="Simple.Migrations\SimpleMigrator.cs" />
+    <Compile Include="Simple.Migrations\SimpleMigrator`2.cs" />
+    <Compile Include="Simple.Migrations\Console\ConsoleLogger.cs" />
+    <Compile Include="Simple.Migrations\Console\ConsoleRunner.cs" />
+    <Compile Include="Simple.Migrations\Console\HelpNeededException.cs" />
+    <Compile Include="Simple.Migrations\Console\SubCommand.cs" />
+    <Compile Include="Simple.Migrations\DatabaseProvider\DatabaseProviderBase.cs" />
+    <Compile Include="Simple.Migrations\DatabaseProvider\DatabaseProviderBaseWithAdvisoryLock.cs" />
+    <Compile Include="Simple.Migrations\DatabaseProvider\DatabaseProviderBaseWithVersionTableLock.cs" />
+    <Compile Include="Simple.Migrations\DatabaseProvider\MssqlDatabaseProvider.cs" />
+    <Compile Include="Simple.Migrations\DatabaseProvider\MysqlDatabaseProvider.cs" />
+    <Compile Include="Simple.Migrations\DatabaseProvider\PostgresqlDatabaseProvider.cs" />
+    <Compile Include="Simple.Migrations\DatabaseProvider\SqliteDatabaseProvider.cs" />
+    <Compile Include="Simple.Migrations\Properties\AssemblyInfo.cs" />
+    <Compile Include="FluentMigrator\Builders\ColumnExpressionBuilderHelper.cs" />
+    <Compile Include="FluentMigrator\Builders\ExpressionBuilderBase.cs" />
+    <Compile Include="FluentMigrator\Builders\ExpressionBuilderWithColumnTypesBase.cs" />
+    <Compile Include="FluentMigrator\Builders\IColumnExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\IColumnOptionSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\IColumnTypeSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\IForeignKeyCascadeSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\IInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\AlterExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\IAlterExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Column\AlterColumnExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Column\IAlterColumnAsTypeOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Column\IAlterColumnAsTypeSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Column\IAlterColumnOnTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Column\IAlterColumnOptionOrForeignKeyCascadeSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Column\IAlterColumnOptionSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Table\AlterTableExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Table\IAlterTableAddColumOrAlterColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Table\IAlterTableAddColumnOrAlterColumnOrSchemaOrDescriptionSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Table\IAlterTableAddColumnOrAlterColumnOrSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Table\IAlterTableColumnAsTypeSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Table\IAlterTableColumnOptionOrAddColumnOrAlterColumnOrForeignKeyCascadeSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Alter\Table\IAlterTableColumnOptionOrAddColumnOrAlterColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\CreateExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\ICreateExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Column\CreateColumnExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Column\ICreateColumnAsTypeOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Column\ICreateColumnAsTypeSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Column\ICreateColumnOnTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Column\ICreateColumnOptionOrForeignKeyCascadeSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Column\ICreateColumnOptionSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Constraint\CreateConstraintExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Constraint\ICreateConstraintColumnsSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Constraint\ICreateConstraintOnTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Constraint\ICreateConstraintOptionsSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Constraint\ICreateConstraintWithSchemaOrColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Constraint\ICreateConstraintWithSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\ForeignKey\CreateForeignKeyExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\ForeignKey\ICreateForeignKeyCascadeSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\ForeignKey\ICreateForeignKeyForeignColumnOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\ForeignKey\ICreateForeignKeyForeignColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\ForeignKey\ICreateForeignKeyFromTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\ForeignKey\ICreateForeignKeyPrimaryColumnOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\ForeignKey\ICreateForeignKeyPrimaryColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\ForeignKey\ICreateForeignKeyToTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Index\CreateIndexExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Index\ICreateIndexColumnOptionsSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Index\ICreateIndexForTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Index\ICreateIndexOnColumnOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Index\ICreateIndexOnColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Index\ICreateIndexOptionsSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Sequence\CreateSequenceExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Sequence\ICreateSequenceInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Sequence\ICreateSequenceSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Table\CreateTableExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Table\ICreateTableColumnAsTypeSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Table\ICreateTableColumnOptionOrForeignKeyCascadeOrWithColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Table\ICreateTableColumnOptionOrWithColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Table\ICreateTableWithColumnOrSchemaOrDescriptionSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Table\ICreateTableWithColumnOrSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Create\Table\ICreateTableWithColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\DeleteDataExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\DeleteExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\IDeleteDataOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\IDeleteDataSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\IDeleteExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\Column\DeleteColumnExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\Column\IDeleteColumnFromTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\Constraint\DeleteConstraintExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\Constraint\IDeleteConstraintOnTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\DefaultConstraint\DeleteDefaultConstraintExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\DefaultConstraint\IDeleteDefaultConstraintOnColumnOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\DefaultConstraint\IDeleteDefaultConstraintOnColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\DefaultConstraint\IDeleteDefaultConstraintOnTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\ForeignKey\DeleteForeignKeyExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\ForeignKey\IDeleteForeignKeyForeignColumnOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\ForeignKey\IDeleteForeignKeyForeignColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\ForeignKey\IDeleteForeignKeyFromTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\ForeignKey\IDeleteForeignKeyOnTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\ForeignKey\IDeleteForeignKeyPrimaryColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\ForeignKey\IDeleteForeignKeyToTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\Index\DeleteIndexExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\Index\IDeleteIndexForTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\Index\IDeleteIndexOnColumnOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\Index\IDeleteIndexOnColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\Sequence\DeleteSequenceExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Delete\Table\DeleteTableExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Execute\ExecuteExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Execute\IExecuteExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Insert\IInsertDataOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Insert\IInsertDataSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Insert\IInsertExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Insert\InsertDataExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Insert\InsertExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Rename\IRenameColumnTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Rename\IRenameExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Rename\RenameExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Rename\Column\IRenameColumnToOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Rename\Column\IRenameColumnToSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Rename\Column\RenameColumnExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Rename\Table\IRenameTableToOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Rename\Table\IRenameTableToSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Rename\Table\RenameTableExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\ISchemaExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\SchemaExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\Column\ISchemaColumnSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\Column\SchemaColumnQuery.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\Constraint\ISchemaConstraintSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\Constraint\SchemaConstraintQuery.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\Index\ISchemaIndexSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\Index\SchemaIndexQuery.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\Schema\ISchemaSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\Schema\SchemaSchemaQuery.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\Table\ISchemaTableSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Schema\Table\SchemaTableQuery.cs" />
+    <Compile Include="FluentMigrator\Builders\Update\IUpdateExpressionRoot.cs" />
+    <Compile Include="FluentMigrator\Builders\Update\IUpdateSetOrInSchemaSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Update\IUpdateSetSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Update\IUpdateWhereSyntax.cs" />
+    <Compile Include="FluentMigrator\Builders\Update\UpdateDataExpressionBuilder.cs" />
+    <Compile Include="FluentMigrator\Builders\Update\UpdateExpressionRoot.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

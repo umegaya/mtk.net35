@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{3BAA9F79-BA0A-4092-B47B-20170DD47989}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Dapper.Contrib.Tests/Tests.cs">
+    <Files>
+      <File FileName="Dapper NET40/SqlMapper.cs" Line="290" Column="75" />
+      <File FileName="Dapper.Contrib/SqlMapperExtensions.cs" Line="1" Column="1" />
+      <File FileName="Dapper.Contrib.Tests/Tests.cs" Line="2" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

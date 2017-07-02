@@ -1,0 +1,4 @@
+/Users/iyatomi/Documents/umegaya/mtkdeps/ext/FusionMigrator/FusionMigrator/obj/Release/net462/FusionMigrator.csproj.CoreCompileInputs.cache
+/Users/iyatomi/Documents/umegaya/mtkdeps/ext/FusionMigrator/FusionMigrator/obj/Release/net462/FusionMigrator.AssemblyInfo.cs
+/Users/iyatomi/Documents/umegaya/mtkdeps/ext/FusionMigrator/FusionMigrator/bin/Release/net462/FusionMigrator.dll
+/Users/iyatomi/Documents/umegaya/mtkdeps/ext/FusionMigrator/FusionMigrator/obj/Release/net462/FusionMigrator.dll

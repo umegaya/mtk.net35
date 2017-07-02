@@ -1,0 +1,3 @@
+/Users/iyatomi/Documents/umegaya/mtkdeps/ext/FusionMigrator/FusionMigrator/obj/Release/FusionMigrator.csproj.CoreCompileInputs.cache
+/Users/iyatomi/Documents/umegaya/mtkdeps/ext/FusionMigrator/FusionMigrator/bin/Release/FusionMigrator.dll
+/Users/iyatomi/Documents/umegaya/mtkdeps/ext/FusionMigrator/FusionMigrator/obj/Release/FusionMigrator.dll

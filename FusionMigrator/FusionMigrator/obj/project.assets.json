@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v3.5": {},
+    ".NETFramework,Version=v3.5/win": {},
+    ".NETFramework,Version=v3.5/win-x64": {},
+    ".NETFramework,Version=v3.5/win-x86": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v3.5": []
+  },
+  "packageFolders": {
+    "/Users/iyatomi/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/iyatomi/Documents/umegaya/mtkdeps/ext/FusionMigrator/FusionMigrator/FusionMigrator.csproj",
+      "projectName": "FusionMigrator",
+      "projectPath": "/Users/iyatomi/Documents/umegaya/mtkdeps/ext/FusionMigrator/FusionMigrator/FusionMigrator.csproj",
+      "outputPath": "/Users/iyatomi/Documents/umegaya/mtkdeps/ext/FusionMigrator/FusionMigrator/obj",
+      "projectStyle": "PackageReference",
+      "originalTargetFrameworks": [
+        "net35"
+      ],
+      "frameworks": {
+        "net35": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net35": {}
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

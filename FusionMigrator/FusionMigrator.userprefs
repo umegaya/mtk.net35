@@ -1,0 +1,22 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="FusionMigrator/Simple.Migrations/AssemblyMigrationProvider.cs">
+    <Files>
+      <File FileName="FusionMigrator/FusionMigrator.csproj" Line="1" Column="1" />
+      <File FileName="FusionMigrator/FluentMigrator/IMigrationProcessor.cs" Line="21" Column="30" />
+      <File FileName="FusionMigrator/Simple.Migrations/ISimpleMigrator.cs" Line="22" Column="23" />
+      <File FileName="FusionMigrator/Simple.Migrations/SimpleMigrator`2.cs" Line="152" Column="121" />
+      <File FileName="FusionMigrator/Simple.Migrations/MigrationData.cs" Line="56" Column="32" />
+      <File FileName="FusionMigrator/FluentMigrator.Runner/Extensions/CompatabilityModeExtension.cs" Line="15" Column="1" />
+      <File FileName="FusionMigrator/FluentMigrator/Model/ColumnDefinition.cs" Line="33" Column="1" />
+      <File FileName="FusionMigrator/FluentMigrator/Model/ConstraintDefinition.cs" Line="15" Column="9" />
+      <File FileName="FusionMigrator/FluentMigrator/Expressions/InsertDataExpression.cs" Line="22" Column="28" />
+      <File FileName="FusionMigrator/Simple.Migrations/AssemblyMigrationProvider.cs" Line="46" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" ActiveRuntime="Mono 5.0.1.1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
